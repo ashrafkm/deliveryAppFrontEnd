@@ -1,0 +1,262 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* You can add global styles to this file, and also import other style files */
+
+.loader {
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #3bafda;
+    width: 60px;
+    height: 60px;
+    position:relative;
+    left:50%;
+    top:50%;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  .ui-g-12{
+    padding-left: 0rem !important;
+  }
+  .logo{
+    color: #fff;
+    margin: 0px;
+}
+
+.mob_icon .fa-1x, .mob_icon  .fa-2x {
+  font-size:1.5em!important;
+  // transition: 2s ease-in-out;
+}
+.style-block,
+    .style-block-prebuild {
+        position: fixed;
+        top: 10px;
+        width: 44%;
+        border-radius: 4px 0 0 4px;
+       
+        box-shadow: -3px 3px 16px 2px darkgrey !important;
+        background: #fff;
+        height:100vh;
+        z-index: 1030;
+        right:0px;
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+      }
+       
+
+.animate-block{
+  
+  animation: slide-in 0.5s forwards;
+  -webkit-animation: slide-in 0.5s forwards;
+}
+
+
+.slide-out {
+animation: slide-out 0.5s forwards;
+-webkit-animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-in {
+100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+100% { -webkit-transform: translateX(0%); }
+}
+
+  
+@keyframes slide-out {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(100%); }
+}
+
+@-webkit-keyframes slide-out {
+  0% { -webkit-transform: translateX(0%); }
+  100% { -webkit-transform: translateX(100%); }
+}
+.ui-chkbox{
+  position: relative;
+  top: -4px;
+}
+.map-checkbox {
+  .ui-chkbox{
+  margin-top: -0.2rem !important;
+  margin-left: 0.5rem !important;
+  margin-right: 0.5rem !important;
+  }
+}
+.button-cls{
+  float:right;
+}
+.delete_icon{
+  padding-left: 1rem !important;
+}
+.ui-dropdown .ui-dropdown-panel{
+  width: 20.4rem !important;
+  /* margin-left: -1rem !important;*/
+}
+.ui-dropdown{
+  padding-left:1rem !important;
+}
+body .first-checkbox .ui-chkbox .ui-chkbox-box.ui-state-active{
+  border-color: #00e64d !important;
+  background-color: #00e64d !important;
+}
+body .second-checkbox .ui-chkbox .ui-chkbox-box.ui-state-active{
+  border-color: #6991fd !important;
+  background-color: #6991fd !important;
+}
+body .third-checkbox .ui-chkbox .ui-chkbox-box.ui-state-active{
+  border-color: #fd7567 !important;
+  background-color: #fd7567 !important;
+}
+body .fourth-checkbox .ui-chkbox .ui-chkbox-box.ui-state-active{
+  border-color: #fdf569 !important;
+  background-color: #fdf569 !important;
+}
+body .fifth-checkbox .ui-chkbox .ui-chkbox-box.ui-state-active{
+  border-color: #e661ac !important;
+  background-color: #e661ac !important;
+}
+body .sixth-checkbox .ui-chkbox .ui-chkbox-box.ui-state-active{
+  border-color: #ff9900 !important;
+  background-color: #ff9900 !important;
+}
+
+.pi-times{
+  position: relative;
+    top: 4px;
+}
+.view-job-details.card{
+  min-height: 85vh !important;
+ /* max-height: 95vh !important;*/
+}  
+.drp-username{
+  margin-top:0.6rem !important;
+}
+.drp-username h6{
+  color:#fff !important;
+}
+.outline-btns{
+  float:right !important;
+}
+.fa-window-close ,.fa-edit{
+  cursor:pointer !important;
+}
+
+.ui-toast-top-right{
+  top:60px !important;
+}
+.view-job-details {
+    .card-header{
+       display:none !important;
+    }
+}
+.waste-description{
+  .card-header{
+    display:none !important;
+ }
+}
+.list-category{
+  .card-header{
+    display:none !important;
+ }
+}
+.view-job-tab{
+  padding:0 1rem !important;
+}
+.details-header{
+  border-bottom:1px solid #e9e9e9 !important;
+  padding:1.8rem 0rem 1rem 0rem !important;
+  margin: 0rem 0.2rem 1.5rem 0.2rem;
+  
+}
+.details-content{
+  background:#f6f7fb !important;
+  padding:1rem 3rem !important;
+  border-radius: 10px !important;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.24) !important;
+}
+.ui-tabview-panel{
+  /* height:100vh;*/
+}
+.fa-window-close {
+  float:right !important;
+}
+.add-edit-header{
+  margin-left:-24px !important;
+}
+.ui-tabview-panel{
+  min-height: 85vh;
+}
+.anchor-cls{
+  color:#ffffff!important;
+  font-weight:600;
+}
+.waste-category{
+  tr th:last-child,tr td:last-child {   
+    width:20% !important;
+}
+tr th:nth-child(2),tr td:nth-child(2) {   
+   width:30% !important;
+}
+}
+.disposal-site{
+  tr th:last-child,tr td:last-child {   
+    width:15% !important;
+}
+tr th:nth-child(3),tr td:nth-child(3) {   
+   width:30% !important;
+}
+}
+.button-bottom{
+  margin-top: 0.5rem !important;
+  margin-bottom:2rem !important;
+}
+.hide-block{
+  display:none !important;
+}
+.disabled{
+  cursor:not-allowed !important;
+  pointer-events: none !important;
+  background-color: #d0c8c838 !important;
+}
+.ui-dropdown-label-container{
+  overflow: hidden !important;
+  margin-right: 1.8rem !important;
+}
+.ui-dialog{
+  position: relative;
+  top:29px
+}
+.ui-tooltip-top{
+  display:inline-block !important;
+  z-index:1030 !important;
+  opacity:1.1 !important;
+  max-width:250px !important;
+}
+.waste-category-tooltip{
+  max-width:unset !important;
+}
+.error-message{
+  font-size:0.7rem !important;
+  color:red !important;
+}
+
+.customLoader{
+  width: 40px !important;
+  height: 40px !important;
+  left: 90% !important;
+  top: 54px !important;
+}
+.jobExportLoader{
+  width: 40px !important;
+  height: 40px !important;
+  left: 20% !important;
+  top: 0px !important;
+}
+.bigchangeBtn{
+  line-height: 0.5;
+  font-size: 10px;
+}

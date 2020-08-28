@@ -1,0 +1,62 @@
+<div>
+    <form [formGroup]="valForm" (ngSubmit)="onSubmit()">
+        <div class='row form-group'>
+            <div class='ui-g-12 mt-3'>
+                <label>Name</label>
+                <input class='ui-g-12' class="form-control" type="text" size="30" formControlName='name' pInputText>
+            </div>
+        </div>
+
+        <div class='row form-group'>
+            <div class='ui-g-12 mt-3'>
+                <label>Description</label>
+                <input class='ui-g-12' class="form-control" type="text" size="30" formControlName='description'
+                    pInputText>
+            </div>
+        </div>
+
+        <div class='row form-group'>
+            <div class='ui-g-12 mt-3'>
+                <label>From Location</label>
+                <input class='ui-g-12' class="form-control" type="text" size="30" formControlName='fromLocation'
+                    pInputText>
+            </div>
+        </div>
+
+        <div class='row form-group'>
+            <div class='ui-g-12 mt-3'>
+                <label>To Location</label>
+                <input class='ui-g-12' class="form-control" type="text" size="30" formControlName='toLocation'
+                    pInputText>
+            </div>
+        </div>
+
+
+        <div>
+            <div class='ui-g-22'>
+                <label for="Driver">Driver</label>
+                <p-dropdown [options]="drivers" formControlName="driver" [style]="{'width':'100%'}"
+                    placeholder="Select a Driver" [showClear]="true"></p-dropdown>
+            </div>
+        </div>
+
+
+        <!-- <h3 class="first">Single</h3>
+        <p-dropdown [options]="drivers" [(ngModel)]="driver" placeholder="Select a City" optionLabel="name"
+            [showClear]="true"></p-dropdown> -->
+        <!-- <p>Selected City: {{selectedCity ? drivers.name : 'none'}}</p> -->
+
+
+        <div class='row button-cls'>
+            <div class='ui-g-12'>
+                <button type="submit" [disabled]="!valForm.valid">Submit</button>
+            </div>
+        </div>
+
+
+
+
+    </form>
+
+</div>
+<div class="loader" *ngIf="showLoader"></div>
