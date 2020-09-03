@@ -44,13 +44,13 @@ export class HomeComponent implements OnInit {
   }
 
   public async loadDeliveries() {
+    // this.dataSource = ELEMENT_DATA;
     this.showLoader = true
     this.service.getlistOfDeliveries().subscribe((resp: any) => {
       this.showLoader = false
       this.dataSource = resp.data;
     }, err => {
       console.log('list error: ', err);
-
     })
   }
 

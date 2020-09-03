@@ -1,0 +1,46 @@
+table {
+    width: 100%;
+  }
+  
+  th.mat-sort-header-sorted {
+    color: black;
+  }
+  .editButton{
+      background: #bdedd9;
+      color: #2fb079;
+      position: relative;
+      border-radius: 6px;
+      overflow: hidden;
+      z-index: 1;
+      padding: 11px 25px;
+      cursor: pointer;
+  }
+
+  .editButton span{
+      position: relative;
+      z-index: 1;
+  }
+
+  .editButton::before{
+      content: "";
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      top:50%;
+      left: 50%;
+      transform:translate3d(-50%, -50%, 0) scale3d(0,0,0);
+      transition: opacity 0.5s cubic-bezier(0.19,1,0.22,1),transform 0.75s cubic-bezier(0.19,1,0.22,1);
+      background-color: #2fb079;
+      opacity: 0;
+      border-radius: 50%;
+  }
+
+  .editButton:hover span{
+    color: #fff;
+  }
+
+  .editButton:hover::before{
+      opacity: 1;
+      transition-duration: 0.85s;
+      transform: translate(-50%, -50%,0)scale3d(1,1,1);
+  }

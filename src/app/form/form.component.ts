@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { DataStorageService } from '../services/data-storage.service';
 import { CoreService } from '../services/core.service';
@@ -10,9 +10,10 @@ import { MessageService } from 'primeng/api';
   styleUrls: ['./form.component.scss']
 })
 export class FormComponent implements OnInit {
+  @Input() deliveryData: any
   showLoader: boolean = false;
   valForm: FormGroup;
-  drivers: Array<any> = [{ label: 'Please Select', value: '' }];;
+  drivers: Array<any> = [{ label: 'Please Select', value: '' }];
   constructor(
     fb: FormBuilder,
     public ds: DataStorageService,
